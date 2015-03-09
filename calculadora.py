@@ -35,13 +35,13 @@ if len(sys.argv != 4):
 if __name__ == "__main__":
     try:
         if sys.argv[1] == "Sumar":
-            sumar(sys.argv[2],sys.argv[3])
+            sumar(sys.argv[2], sys.argv[3])
         if sys.argv[1] == "Restar":
-            restar(sys.argv[2],sys.argv[3])
+            restar(sys.argv[2], sys.argv[3])
         if sys.argv[1] == "Multiplicar":
-            multiplicar(sys.argv[2],sys.argv[3])
+            multiplicar(sys.argv[2], sys.argv[3])
         if sys.argv[1] == "Dividir":
-            dividir(sys.argv[2],sys.argv[3])
+            dividir(sys.argv[2], sys.argv[3])
     except ValueError:
         print("Al menos uno de los dos numeros es incorrecto")
     except IndexError:
