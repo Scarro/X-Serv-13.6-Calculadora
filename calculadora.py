@@ -8,21 +8,26 @@ $python calculadora.py Operacion operador1 operador2
 #!/usr/bin/python
 
 import sys
-import os
 
-funciones = ['suma','resta','multiplicacion','division']
 
 def sumar(val1, val2):
     print(val1 + val2)
+
+
 def restar(val1, val2):
     print(val1 - val2)
+
+
 def multiplicar(val1, val2):
     print(val1 * val2)
+
+
 def dividir(val1, val2):
     try:
         print (float(val1) / float(val2))
     except ZeroDivisionError:
         print "Imposible dividir entre 0"
+
 
 if len(sys.argv != 4):
     sys.exit("Uso: $ python calculadora.py Operacion operador1 operador2")
