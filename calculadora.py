@@ -1,6 +1,3 @@
-"""
-	Script que implementa una calculadora simple
-"""
 #!/usr/bin/python
 
 import sys
