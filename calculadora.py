@@ -28,7 +28,7 @@ if __name__ == "__main__":
     	if sys.argv[1] == "sumar":
     		sumar(operando1, operando2)
     	elif sys.argv[1] == "restar":
-    		restar(operando1,operando2)
+    		restar(operando1, operando2)
     	elif sys.argv[1] == "multiplicar":
     		multiplicar(operando1, operando2)
     	elif sys.argv[1] == "dividir":
