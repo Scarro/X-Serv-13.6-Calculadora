@@ -1,48 +1,45 @@
-"""
-Script para crear una calculadora simple
-
-Ejecucion:
-$python calculadora.py Operacion operador1 operador2
-"""
-
 #!/usr/bin/python
+"""
+	Script que implementa una calculadora simple
+"""
 
 import sys
 
 
-def sumar(val1, val2):
-    print(val1 + val2)
+def sumar(operando1, operando2):
+	print operando1 + operando2
 
 
-def restar(val1, val2):
-    print(val1 - val2)
+def restar(operando1, operando2):
+	print operando1 - operando2
 
 
-def multiplicar(val1, val2):
-    print(val1 * val2)
+def multiplicar(operando1, operando2):
+	print operando1 * operando2
 
 
-def dividir(val1, val2):
-    try:
-        print (float(val1) / float(val2))
-    except ZeroDivisionError:
-        print "Imposible dividir entre 0"
+def dividir(operando1, operando2):
+	try:
+		print (operando1) / (operando2)
+	except ZeroDivisionError:
+		print "Imposible dividir entre 0"
 
-
-if len(sys.argv != 4):
-    sys.exit("Uso: $ python calculadora.py Operacion operador1 operador2")
 
 if __name__ == "__main__":
-    try:
-        if sys.argv[1] == "Sumar":
-            sumar(sys.argv[2], sys.argv[3])
-        if sys.argv[1] == "Restar":
-            restar(sys.argv[2], sys.argv[3])
-        if sys.argv[1] == "Multiplicar":
-            multiplicar(sys.argv[2], sys.argv[3])
-        if sys.argv[1] == "Dividir":
-            dividir(sys.argv[2], sys.argv[3])
-    except ValueError:
-        print("Al menos uno de los dos numeros es incorrecto")
-    except IndexError:
-        print("Falta al menos un numero por introducir")
+	try:
+		operando1 = float(sys.argv[2])
+		operando2 = float(sys.argv[3])
+		if sys.argv[1] == "sumar":
+			sumar(operando1,operando2)
+		elif sys.argv[1] == "restar":
+			restar(operando1,operando2)
+		elif sys.argv[1] == "multiplicar":
+			multiplicar(operando1,operando2)
+		elif sys.argv[1] == "dividir":
+			dividir(operando1,operando2)
+		else:
+			print "Uso: Operaciones disponibles: +  -  *  /"
+	except ValueError:
+		print "Al menos uno de los operandos no es un numero"
+	except IndexError:
+		print "Uso: python calculadora.py funcion operando1 operando2"
