@@ -1,7 +1,7 @@
-#!/usr/bin/python
 """
 	Script que implementa una calculadora simple
 """
+#!/usr/bin/python
 
 import sys
 
@@ -43,3 +43,4 @@ if __name__ == "__main__":
 		sys.exit("Al menos uno de los operandos no es un numero")
 	except IndexError:
 		sys.exit("Uso: python calculadora.py funcion operando1 operando2")
+
