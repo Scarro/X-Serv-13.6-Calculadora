@@ -6,11 +6,14 @@ import sys
 def sumar(operando1, operando2):
     print(operando1 + operando2)
 
+
 def restar(operando1, operando2):
     print(operando1 - operando2)
 
+
 def multiplicar(operando1, operando2):
     print(operando1 * operando2)
+
 
 def dividir(operando1, operando2):
     try:
