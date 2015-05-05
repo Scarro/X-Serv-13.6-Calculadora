@@ -22,7 +22,7 @@ def dividir(operando1, operando2):
 	try:
 		print (operando1) / (operando2)
 	except ZeroDivisionError:
-		print "Imposible dividir entre 0"
+		sys.exit("Imposible dividir entre 0")
 
 
 if __name__ == "__main__":
@@ -40,6 +40,6 @@ if __name__ == "__main__":
 		else:
 			print "Uso: Operaciones disponibles: +  -  *  /"
 	except ValueError:
-		print "Al menos uno de los operandos no es un numero"
+		sys.exit("Al menos uno de los operandos no es un numero")
 	except IndexError:
-		print "Uso: python calculadora.py funcion operando1 operando2"
+		sys.exit("Uso: python calculadora.py funcion operando1 operando2")
