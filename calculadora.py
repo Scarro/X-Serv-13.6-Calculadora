@@ -1,22 +1,27 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-#Sergio Carro Albarrán
-#Calculadora simple en python
+# Sergio Carro Albarrán
+# Calculadora simple en python
 
 import sys
+
 
 def sumar(operando1, operando2):
 	return operando1 + operando2
 
+
 def restar(operando1, operando2):
 	return operando1 - operando2
+
 
 def multiplicar(operando1, operando2):
 	return operando1 * operando2
 
+
 def dividir(operando1, operando2):
 	return operando1 / operando2
+
 
 if __name__ == "__main__":
 	try:
@@ -35,4 +40,4 @@ if __name__ == "__main__":
 		print(str(e.args[0]) + " no es una función permitida")
 		sys.exit("Operaciones: sumar, restar, multiplicar, dividir")
 	except ZeroDivisionError:
-		sys.exit("Imposible dividir entre 0");
+		sys.exit("Imposible dividir entre 0")
