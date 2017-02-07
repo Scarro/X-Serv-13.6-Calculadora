@@ -41,3 +41,4 @@ if __name__ == "__main__":
 		sys.exit("Operaciones: sumar, restar, multiplicar, dividir")
 	except ZeroDivisionError:
 		sys.exit("Imposible dividir entre 0")
+		
