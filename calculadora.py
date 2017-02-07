@@ -22,7 +22,6 @@ def multiplicar(operando1, operando2):
 def dividir(operando1, operando2):
 	return operando1 / operando2
 
-
 if __name__ == "__main__":
 	try:
 		if len(sys.argv) != 4:
